@@ -2,7 +2,8 @@
 ## Ardupilot based UAV Swarm + Gazebo simulator
 ### This is a instruction for using KETI GCS + nCube_MUV + Ardupilot + Gazebo
 
-<img src="https://github.com/sungwook87/ArduSwarmSim/tree/main/img/gcs.png" width = 55% height = 55%/>
+![ui](./img/gcs.png)
+
 ### Web GCS by [Autonomous IoT Research Center @ KETI](https://github.com/IoTKETI)
 
 
