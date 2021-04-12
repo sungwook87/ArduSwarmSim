@@ -24,14 +24,3 @@ Make sure you run Gazebo at leat once.
 [ardupilot_gazebo](https://github.com/SwiftGust/ardupilot_gazebo)
 
 
-
-
-## 2. Build VINS-Fusion
-Clone the repository and catkin_make:
-```
-    cd ~/catkin_ws/src
-    git clone https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git
-    cd ../
-    catkin_make
-    source ~/catkin_ws/devel/setup.bash
-```
