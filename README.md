@@ -54,11 +54,11 @@ You can add the UAVs with added ports as much as you want.
 
 Second UAV: **model.sdf**
 
-![ui](./img/modellist.png)
+![ui](./img/9012.png)
 
 Third UAV: **model.sdf**
 
-![ui](./img/modellist.png)
+![ui](./img/9022.png)
 
 
 Then, you need to modify the **.world** file.
@@ -67,6 +67,27 @@ Then, you need to modify the **.world** file.
     sudo cp iris_ardupilot.world multiuav.world
     sudo gedit multiuav.world
 ```
+Find below part
+
+![ui](./img/beforeworld.png)
+
+and replace by
+
+![ui](./img/afterworld.png)
+
+then run,
+
+```
+    gazebo --verbose multiuav.world
+```
+
+You will see this world.
+
+![ui](./img/gazebo_world.png)
+
+
+
+
 
 
 
