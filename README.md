@@ -1,7 +1,8 @@
 # ArduSwarmSim
 ## Ardupilot based UAV Swarm + Gazebo simulator
-### This is an instruction for using KETI GCS + nCube_MUV + Ardupilot + Gazebo
-### This is for Non-ROS users
+This is an instruction for using KETI GCS + nCube_MUV + Ardupilot + Gazebo.
+
+(This is for Non-ROS users or can be used with ROS)
 
 ![ui](./img/gcs.png)
 
@@ -67,11 +68,11 @@ Then, you need to modify the **.world** file.
     sudo cp iris_ardupilot.world multiuav.world
     sudo gedit multiuav.world
 ```
-Find below part
+Find below part,
 
 ![ui](./img/beforeworld.png)
 
-and replace by
+and replace those lines with
 
 ![ui](./img/afterworld.png)
 
@@ -86,9 +87,50 @@ You will see this world.
 ![ui](./img/gazebo_world.png)
 
 
+1.6 **Clone the ardupilot source folder**
+
+At the moment, I only tested one by one matching architecture which means you need to run the ardupilot SITL code for each UAV.
+In this case, I set 3 UAVs, so you need to have 3 ardupilot SITL code as follows:
+
+![ui](./img/ardupilot.png)
+
+
+Then, you are READY to GO.
+
+## 2. Run
+
+Terminal 1 (9002)
+
+```
+    cd ~/ardupilot/Tools/autotest
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0
+```
+
+Terminal 2 (9012)
+
+```
+    cd ~/ardupilot2/Tools/autotest
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I1
+```
+
+Terminal 3 (9022)
+
+```
+    cd ~/ardupilot3/Tools/autotest
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I2
+```
+
+Terminal 4 (gazebo)
+
+```
+    gazebo --verbose multiuav.world
+```
+
+![ui](./img/run1.png)
 
 
 
 
+##
 
 
