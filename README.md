@@ -16,22 +16,28 @@ Ubuntu 64-bit 18.04., ROS Melodic. [ROS Installation](http://wiki.ros.org/ROS/In
 
 
 1.2 **ardupilot**
+
 Follow the instructions below:
+
 [ardupilot](https://github.com/ArduPilot/ardupilot)
 
 
 1.3. **Install ardupilot_gazebo plugin**
+
 Follow the instructions below:
+
 [ardupilot_gazebo](https://github.com/SwiftGust/ardupilot_gazebo)
 
 
 1.4. **Gazebo 8 or 9**
+
 Make sure you run Gazebo at leat once.
 ```
     gazebo --verbose iris_arducopter_demo.world
 ```
 
 1.5 **Modify the model & world files**
+
 For multi-UAVs, we need to edit the model.sdf and world.world files.
 ```
     cd ~/path_to_[ardupilot_gazebo]/models/iris_with_standoffs_demo
