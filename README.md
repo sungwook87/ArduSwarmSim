@@ -103,21 +103,21 @@ Terminal 1 (9002)
 
 ```
     cd ~/ardupilot/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0 -L Keti --out udpin:127.0.0.1:14551
 ```
 
 Terminal 2 (9012)
 
 ```
     cd ~/ardupilot2/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I1
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I1 -L Keti --out udpin:127.0.0.1:14551
 ```
 
 Terminal 3 (9022)
 
 ```
     cd ~/ardupilot3/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I2
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I2 -L Keti --out udpin:127.0.0.1:14551
 ```
 
 Terminal 4 (gazebo)
