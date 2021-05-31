@@ -129,8 +129,9 @@ Terminal 4 (gazebo)
 ![ui](./img/run1.png)
 
 
-
+## 3. Etc
+14550 port is basically from MavProxy to GCS.
+We can use 14551 port as input from GCS to MavProxy by ```--out udpin:127.0.0.1:14551``` option.
 
 ##
-
 
