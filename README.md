@@ -7,6 +7,7 @@ This is an instruction for using KETI GCS + nCube_MUV + Ardupilot + Gazebo.
 ![ui](./img/gcs.png)
 
 ### Web GCS by [Autonomous IoT Research Center @ KETI](https://github.com/IoTKETI)
+## http://203.253.128.177:7585/
 
 
 
