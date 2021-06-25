@@ -20,7 +20,10 @@ Ubuntu 64-bit 18.04., ROS Melodic. [ROS Installation](http://wiki.ros.org/ROS/In
 1.2 **ardupilot**
 
 Follow the instructions: [ardupilot](https://github.com/ArduPilot/ardupilot)
-
+```
+    cd ~/path_to_[ardupilot]
+    git submodule update --init --recursive
+```
 
 1.3. **Install ardupilot_gazebo plugin**
 
