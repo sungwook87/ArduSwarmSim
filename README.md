@@ -134,8 +134,11 @@ Terminal 4 (gazebo)
 
 
 ## 3. Etc
-14550 port is basically from MavProxy to GCS.
+3.1 14550 port is basically from MavProxy to GCS.
 We can use 14551 port as input from GCS to MavProxy by ```--out udpin:127.0.0.1:14551``` option.
 
+3.2 SITL parameter settings
+- set **SYSID_THISMAV** to your UAV ID. It should be same with the number you set in the resource server (either Web GCS).
+- set **SERIAL0_PROTOCOL** to **1:MAVlink1** and **SERIAL1_PROTOCOL** to **1::MAVlink1**. Since nCube can parse only MAVLINK 1 protocol at the momnet.
 ##
 
