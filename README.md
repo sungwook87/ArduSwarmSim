@@ -4,9 +4,6 @@ This is an instruction for using KETI GCS + nCube_MUV + Ardupilot + Gazebo.
 
 (This is for Non-ROS users or can be used with ROS)
 
-<iframe width="100%" height="600" src="https://www.youtube.com/watch?v=qKVCXtHBdWo" frameborder="0" allowfullscreen></iframe>
-
-
 ![ui](./img/gcs.png)
 
 ### Web GCS by [Autonomous IoT Research Center @ KETI](https://github.com/IoTKETI)
