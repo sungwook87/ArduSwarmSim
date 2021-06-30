@@ -111,7 +111,7 @@ Terminal 1 (9002)
     ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0 -L Keti --out udpin:127.0.0.1:14552 (use this one)
 ```
 > somehow, I guess **14551** port roles **in-out** connection, so if you use **14551** port, the data goes to Web GCS twice (from **14550** and **14551**).
-> Please use **14552** port which seems like it is **in-only** port. Same with the other drones.
+> Please use **xxxx2** port which seems like it is **in-only** port. Same with the other drones.
 
 Terminal 2 (9012)
 
