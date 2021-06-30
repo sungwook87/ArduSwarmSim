@@ -107,21 +107,24 @@ Terminal 1 (9002)
 
 ```
     cd ~/ardupilot/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0 -L Keti --out udpin:127.0.0.1:14551
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0 -L Keti --out udpin:127.0.0.1:14551 (not this one)
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I0 -L Keti --out udpin:127.0.0.1:14552 (use this one)
 ```
+> somehow, I guess **14551** port roles **in-out** connection, so if you use **14551** port, the data goes to Web GCS twice (from **14550** and **14551**).
+> Please use **14552** port which seems like it is **in** port. Same with the other drones.
 
 Terminal 2 (9012)
 
 ```
     cd ~/ardupilot2/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I1 -L Keti --out udpin:127.0.0.1:14561
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I1 -L Keti --out udpin:127.0.0.1:14562
 ```
 
 Terminal 3 (9022)
 
 ```
     cd ~/ardupilot3/Tools/autotest
-    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I2 -L Keti --out udpin:127.0.0.1:14571
+    ./sim_vehicle.py -v ArduCopter -f gazebo-iris --console -I2 -L Keti --out udpin:127.0.0.1:14572
 ```
 
 Terminal 4 (gazebo)
